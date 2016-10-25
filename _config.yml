@@ -12,7 +12,7 @@ description: > # this means to ignore newlines until "baseurl:"
   
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://elggem.github.io" # the base hostname & protocol for your site
-twitter_username: derralle
+#twitter_username: derralle
 github_username:  elggem
 
 # Build settings
