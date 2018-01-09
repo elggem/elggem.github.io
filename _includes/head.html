@@ -13,7 +13,9 @@
   <script src="//twemoji.maxcdn.com/twemoji.min.js"></script>
   <script>
     window.onload = function() {
-      if !(navigator.userAgent.indexOf("Safari") > -1) {
+      var isMacLike = navigator.platform.match(/(Mac|iPhone|iPod|iPad)/i)?true:false;
+
+      if (!isMacLike) {
         twemoji.size = '16x16';
         twemoji.parse(document.body);
       }
