@@ -13,7 +13,7 @@
   <script src="//twemoji.maxcdn.com/twemoji.min.js"></script>
   <script>
     window.onload = function() {
-      if (!navigator.userAgent.indexOf("Safari") > -1) {
+      if !(navigator.userAgent.indexOf("Safari") > -1) {
         twemoji.size = '16x16';
         twemoji.parse(document.body);
       }
