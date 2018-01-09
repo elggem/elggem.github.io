@@ -13,8 +13,21 @@
   <script src="//twemoji.maxcdn.com/twemoji.min.js"></script>
   <script>
     window.onload = function() {
-      twemoji.size = '16x16';
-      twemoji.parse(document.body);
+        // from https://stackoverflow.com/questions/40385022/how-does-github-detect-whether-the-browser-has-color-emoji-support
+        var canvas = document.createElement("canvas"),
+            ctx = canvas.getContext("2d");
+
+        canvas.style="height:100px;width:100px;position:absolute;top:60%;background:white";
+        document.body.appendChild(canvas);
+        ctx.fillStyle ="#FFF";
+        ctx.font="100px Arial";
+        ctx.fillText('😡',100,100);
+        var d = ctx.getImageData(50, 50, 1, 1).data;
+        if (d[0] + d[1] + d[2] === 0) {
+            //need twemoji or something else
+            twemoji.size = '16x16';
+            twemoji.parse(document.body);
+        }
     }
   </script>
   <style>
