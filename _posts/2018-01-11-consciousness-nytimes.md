@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "* Consciousness Isn’t a Mystery. It’s Matter."
+title:  "🔗 Consciousness Isn’t a Mystery. It’s Matter."
 date:   2018-01-11 18:00:00 +0800
 categories: link article consciousness
 ---
